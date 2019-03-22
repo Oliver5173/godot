@@ -1,12 +1,12 @@
 # Doxyfile 1.8.9.1
 
-# This file describes the settings to be used by the documentation system
+# This file describes the settings of documentation system
 # doxygen (www.doxygen.org) for a project.
 #
-# All text after a double hash (##) is considered a comment and is placed in
+# All text after a double hash (##) is considered as a comment and is placed in
 # front of the TAG it is preceding.
 #
-# All text after a single hash (#) is considered a comment and will be ignored.
+# All text after a single hash (#) is considered as a comment and will be ignored.
 # The format is:
 # TAG = value [value, ...]
 # For lists, items can also be appended using:
@@ -17,7 +17,7 @@
 # Project related configuration options
 #---------------------------------------------------------------------------
 
-# This tag specifies the encoding used for all characters in the config file
+# This tag specifies the encoding used for all characters in the configuration file
 # that follow. The default is UTF-8 which is also the encoding used for all text
 # before the first occurrence of this tag. Doxygen uses libiconv (or the iconv
 # built into libc) for the transcoding. See http://www.gnu.org/software/libiconv
@@ -27,53 +27,51 @@
 DOXYFILE_ENCODING      = UTF-8
 
 # The PROJECT_NAME tag is a single word (or a sequence of words surrounded by
-# double-quotes, unless you are using Doxywizard) that should identify the
-# project for which the documentation is generated. This name is used in the
-# title of most generated pages and in a few other places.
+# double-quotes, unless you are using Doxywizard) that identify the
+# project for which the documentation is generated. The name is used in the
+# title of most generated pages and in few other places.
 # The default value is: My Project.
 
 PROJECT_NAME           = Godot
 
-# The PROJECT_NUMBER tag can be used to enter a project or revision number. This
-# could be handy for archiving the generated documentation or if some version
+# The PROJECT_NUMBER tag is used to enter a project or revision number. This
+# could be handy when archiving the generated documentation or when some version
 # control system is used.
 
 PROJECT_NUMBER         = 
 
-# Using the PROJECT_BRIEF tag one can provide an optional one line description
-# for a project that appears at the top of each page and should give viewer a
+# Using the PROJECT_BRIEF tag, one can provide an optional one-line description
+# of a project appearing at the top of each page and give viewer a
 # quick idea about the purpose of the project. Keep the description short.
 
 PROJECT_BRIEF          = "Game Engine MIT"
 
-# With the PROJECT_LOGO tag one can specify a logo or an icon that is included
-# in the documentation. The maximum height of the logo should not exceed 55
-# pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
-# the logo to the output directory.
+# With the PROJECT_LOGO tag, one can specify a logo or an icon that is included
+# in the documentation. The logo should have a maximum height of 55 pixels and a
+# maximum width of 200 pixels. Doxygen will copy the logo to the output directory.
 
 PROJECT_LOGO           = ../logo.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
-# into which the generated documentation will be written. If a relative path is
-# entered, it will be relative to the location where doxygen was started. If
-# left blank the current directory will be used.
+# where the generated documentation is written. Relative path is relative to the
+# location where doxygen was started. If leaving it blank, the current directory
+# will be used.
 
 OUTPUT_DIRECTORY       = ./_build/doxygen/
 
-# If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
+# If the CREATE_SUBDIRS tag is set to YES, doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
-# will distribute the generated files over these directories. Enabling this
-# option can be useful when feeding doxygen a huge amount of source files, where
-# putting all generated files in the same directory would otherwise causes
-# performance problems for the file system.
+# distribute the generated files over these directories. Enabling this option 
+# can be useful when feeding doxygen a huge amount of source files. Putting all
+# generated files in the same directory would cause performance problems.
 # The default value is: NO.
 
 CREATE_SUBDIRS         = NO
 
 # If the ALLOW_UNICODE_NAMES tag is set to YES, doxygen will allow non-ASCII
-# characters to appear in the names of generated files. If set to NO, non-ASCII
-# characters will be escaped, for example _xE3_x81_x84 will be used for Unicode
-# U+3044.
+# characters to appear in the names of generated files. If set the tag to NO,
+# non-ASCII characters will be escaped. For example: _xE3_x81_x84 will be used
+# for Unicode U+3044.
 # The default value is: NO.
 
 ALLOW_UNICODE_NAMES    = NO
@@ -94,8 +92,8 @@ ALLOW_UNICODE_NAMES    = NO
 OUTPUT_LANGUAGE        = English
 
 # If the BRIEF_MEMBER_DESC tag is set to YES, doxygen will include brief member
-# descriptions after the members that are listed in the file and class
-# documentation (similar to Javadoc). Set to NO to disable this.
+# descriptions after the members listed in the file and class documentation (similar
+3 to Javadoc). One can set the tag to NO to disable the functionality.
 # The default value is: YES.
 
 BRIEF_MEMBER_DESC      = YES
@@ -103,7 +101,7 @@ BRIEF_MEMBER_DESC      = YES
 # If the REPEAT_BRIEF tag is set to YES, doxygen will prepend the brief
 # description of a member or function before the detailed description
 #
-# Note: If both HIDE_UNDOC_MEMBERS and BRIEF_MEMBER_DESC are set to NO, the
+# Note: If HIDE_UNDOC_MEMBERS and BRIEF_MEMBER_DESC are set to NO, the
 # brief descriptions will be completely suppressed.
 # The default value is: YES.
 
@@ -240,13 +238,13 @@ TAB_SIZE               = 4
 
 ALIASES                = 
 
-# This tag can be used to specify a number of word-keyword mappings (TCL only).
+# This tag is used to specify a number of word-keyword mappings (TCL only).
 # A mapping has the form "name=value". For example adding "class=itcl::class"
 # will allow you to use the command class in the itcl::class meaning.
 
 TCL_SUBST              = 
 
-# Set the OPTIMIZE_OUTPUT_FOR_C tag to YES if your project consists of C sources
+# Set the OPTIMIZE_OUTPUT_FOR_C tag to YES if the project consists of C sources
 # only. Doxygen will then generate output that is more tailored for C. For
 # instance, some of the names that are used will be different. The list of all
 # members will be omitted, etc.
@@ -293,7 +291,7 @@ OPTIMIZE_OUTPUT_VHDL   = NO
 
 EXTENSION_MAPPING      = 
 
-# If the MARKDOWN_SUPPORT tag is enabled then doxygen pre-processes all comments
+# If the MARKDOWN_SUPPORT tag is enabled, doxygen pre-processes all comments
 # according to the Markdown format, which allows for more readable
 # documentation. See http://daringfireball.net/projects/markdown/ for details.
 # The output of markdown processing is further processed by doxygen, so you can
@@ -311,12 +309,12 @@ MARKDOWN_SUPPORT       = YES
 
 AUTOLINK_SUPPORT       = YES
 
-# If you use STL classes (i.e. std::string, std::vector, etc.) but do not want
-# to include (a tag file for) the STL sources as input, then you should set this
-# tag to YES in order to let doxygen match functions declarations and
-# definitions whose arguments contain STL classes (e.g. func(std::string);
-# versus func(std::string) {}). This also make the inheritance and collaboration
-# diagrams that involve STL classes more complete and accurate.
+# If one wants to use STL classes (i.e. std::string, std::vector, etc.) without
+# including (a tag file for) the STL sources as input, one should set this
+# tag to YES to matching functions declarations and definitions whose arguments
+# contain STL classes (e.g. func(std::string); versus func(std::string) {}). 
+# This also make the inheritance and collaboration diagrams involve STL classes 
+# more completely and accurately.
 # The default value is: NO.
 
 BUILTIN_STL_SUPPORT    = NO
